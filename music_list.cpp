@@ -128,7 +128,7 @@ public:
         } while (temp != current_song);
 
         auto rng = default_random_engine(static_cast<unsigned>(time(0)));
-        std :: shuffle(songs.begin(), songs.end(), rng);
+        std ::shuffle(songs.begin(), songs.end(), rng);
 
         int n = songs.size();
         for (int i = 0; i < n; ++i)
@@ -148,7 +148,7 @@ int main()
     Playlist p;
     int c;
     string song_name;
-    cout << "--------Music Playlisst Simulator--------" << endl;
+    cout << "--------Music Playlist Simulator--------" << endl;
     while (1)
     {
         cout << "1. Add song\n2.Delete current song\n3.Play next\n4.Play previous\n5.Shuffle Playlist\n6.Show Playlist\n7.Exit\nEnter your choice: ";
@@ -183,5 +183,6 @@ int main()
             cout << "Please enter a valid choice." << endl;
             break;
         }
+        cout << "==================================================" << endl;
     }
 }
